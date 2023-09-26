@@ -1,0 +1,16 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <p id="special">This paragraph is special</p>
+    <p class="display-4">A paragraph with class display-4</p>
+    <matthias>I'm Matthias</matthias>
+    
+    <!--  warning: clock function must be defined before, otherwise event is ignored-->
+    <button id="ok" onclick="clock">ok</button>
+</div>
