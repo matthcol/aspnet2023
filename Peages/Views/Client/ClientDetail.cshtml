@@ -1,0 +1,20 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model Peages.Models.Client
+@{
+    Layout = "_Layout";
+}
+
+<div class="container">
+    <div class="row"><span class="col-4">Name</span><span class="col-8">@Model.Name</span></div>
+    <div class="row"><span class="col-4">Id</span><span class="col-8">@Model.Id</span></div>
+    <div class="row"><span class="col-4">Birthdate</span>
+            <span class="col-8">@string.Format("{0:dd/MM/yyyy}",@Model.Birthdate)</span></div>
+    <div class="row"><span class="col-4">Birthdate</span>
+            <span class="col-8">@Model.Birthdate?.ToShortDateString()</span></div>
+    <div class="row"><span class="col-4">Birthdate</span>
+            <span class="col-8">@Model.Birthdate?.ToString("dd/MM/yyyy")</span></div>
+</div>
+
+<div class="back">@Html.ActionLink("Retour", "Index", null, null, new {@class = "nav-link text-dark"})</div>

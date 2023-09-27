@@ -21,7 +21,7 @@ app.UseRouting();
 // default controller routing
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=Peage}/{action=Index}/{id?}");
 
 app.UseAuthorization();
 
