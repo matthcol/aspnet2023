@@ -1,0 +1,17 @@
+﻿
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Details";
+}
+
+<h2>@ViewData["Title"]</h2>
+<p>View details (shared): id = @ViewData["id"]</p>
+<p>Message: @ViewData["message"]</p>
+<p>City: @ViewBag.City</p>
+<p>Foreach example:
+    @foreach (var city in ViewBag.cities)
+    {
+        <text>@city, </text>
+    }
+</p>
+

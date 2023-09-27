@@ -13,4 +13,4 @@ function clock() {
     console.log("clock")
 }
 
-// $("#ok").click(clock)
+$("#ok").click(clock)
